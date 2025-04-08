@@ -1,0 +1,28 @@
+{
+  "name": "@kortoaus/cf-ddns",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Automated DDNS updater for Cloudflare DNS records using their API",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsup src/index.ts --watch --format esm,cjs",
+    "build": "tsup src/index.ts --format esm,cjs",
+    "ddns": "node dist/index.js"
+  },
+  "keywords": [
+    "cloudflare",
+    "ddns",
+    "dns",
+    "cloudflare-ddns"
+  ],
+  "author": "kortoaus",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}
