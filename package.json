@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "description": "Automated DDNS updater for Cloudflare DNS records using their API",
   "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "dev": "tsup src/index.ts --watch --format esm,cjs",
     "build": "tsup src/index.ts --format esm,cjs",
